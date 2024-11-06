@@ -1,0 +1,147 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для кнопок переключения */
+.switch-button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.switch-button:hover {
+    text-decoration: underline;
+}
+
+/* Стили для Dashboard */
+.dashboard {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.file-list li:last-child {
+    border-bottom: none;
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-actions svg {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.file-actions svg:hover {
+    color: #0056b3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Logout button */
+.logout-button {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+

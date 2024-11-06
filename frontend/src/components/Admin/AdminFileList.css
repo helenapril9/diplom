@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+li svg {
+    color: blue;
+    cursor: pointer;
+}
+
+li svg:hover {
+    color: darkblue;
+}
